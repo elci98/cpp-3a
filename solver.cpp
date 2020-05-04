@@ -260,7 +260,7 @@ namespace solver
                 complex<double> t = -c/b;
                 return t;
             }
-            return b;
+            throw std::runtime_error("this equation does not have real roots\n");
         }
         complex<double> d = b*b -4*a*c;
         if(d >= 0)
